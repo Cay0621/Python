@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//Baidu/TranslationByBaidu.py=utf-8
+encoding//Google/TranslationByGoogle.py=utf-8
+encoding//Graphic/GraphicTranslation.py=utf-8
+encoding//Youdao/TranslationByYoudao.py=utf-8
