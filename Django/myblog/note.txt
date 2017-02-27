@@ -1,0 +1,15 @@
+(1)、创建项目工程：
+	使用命令行创建: django-admin startproject project-name
+		
+(2)、启动服务
+	进入项目根目录
+		python manager.py runserver 		: 默认端口号为8000
+		python manager.py runserver 端口号	: 修改端口号
+		
+(3)、创建应用app
+	1、进入项目根目录后，使用python manager.py startapp app-name
+	2、将应用app添加到settings.py的INSTALLED_APPS中
+	
+(4)、数据同步迁移
+	python manage.py makemigrations
+	python manage.py migrate

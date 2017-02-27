@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="{% url 'blog:edit_action' %}" method="post">
+		{% csrf_token %}<!-- 凡是使用post提交的表单，都需要该行 -->
+		
+		<!-- 使用templates过滤器 -->
+		<input type="hidden" name="article_id" value="{{ article.id | default: '0'}}" />
+		<label>文件标题<input name="title" value="{{ article.title}}"/></label>
+		<label>文件内容<input name="content" value="{{ article.content }}"/></label>
+		<input type="submit" value="提交" />
+	</form>
+</body>
+</html>
